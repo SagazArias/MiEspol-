@@ -29,8 +29,17 @@ Prototipo MVP en **Expo (React Native)** inspirado en Mi ESPOL.
 ## 📍 Datos del campus
 
 * **Fuente:** `assets/campus/Mapa-ESPOL.kml` *(y capas derivadas en `assets/campus/`)*.
-* **Destinos principales (14 en total):** 
-  * CTI, Admisiones, FCV, Residencias, FIMCM, Rectorado, Biblioteca, FCSH, FCNM, UBP, FIEC, FIMCP, FICT, FADCOM.
+* **Destinos principales (14 en total):**
+
+| N.º | Destino | N.º | Destino |
+|---|---|---|---|
+| 1 | CTI | 8 | FCSH |
+| 2 | Admisiones | 9 | FCNM |
+| 3 | FCV | 10 | UBP |
+| 4 | Residencias | 11 | FIEC |
+| 5 | FIMCM | 12 | FIMCP |
+| 6 | Rectorado | 13 | FICT |
+| 7 | Biblioteca | 14 | FADCOM |
 
 ---
 
