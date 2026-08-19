@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Mi ESPOL+",
+    "slug": "prototipos-alta-resolucion",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Necesitamos tu ubicación para calcular rutas y validar caminatas en el campus.",
+        "NSCameraUsageDescription": "Permite adjuntar fotos al reportar obstáculos.",
+        "NSPhotoLibraryUsageDescription": "Permite adjuntar fotos al reportar obstáculos."
+      }
+    },
+    "android": {
+      "package": "ec.edu.espol.campusinteligente",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_MEDIA_IMAGES",
+        "VIBRATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Permite a Campus ESPOL+ usar tu GPS para rutas e incentivos."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permite adjuntar fotos en reportes de obstáculos.",
+          "cameraPermission": "Permite tomar fotos de obstáculos en el campus."
+        }
+      ]
+    ]
+  }
+}

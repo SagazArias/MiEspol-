@@ -1,0 +1,29 @@
+export type Destination = {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+};
+
+export const destinations: Destination[] = [
+  { id: 'cti', name: 'CTI', lat: -2.1458446, lng: -79.9489238 },
+  { id: 'admisiones', name: 'Admisiones', lat: -2.1501606, lng: -79.9493357 },
+  { id: 'fcv', name: 'FCV', lat: -2.1518773, lng: -79.9567078 },
+  { id: 'residencias', name: 'Residencias', lat: -2.1536581, lng: -79.956962 },
+  { id: 'fimcm', name: 'FIMCM', lat: -2.1468841, lng: -79.9628524 },
+  { id: 'rectorado', name: 'Rectorado', lat: -2.1474978, lng: -79.9645096 },
+  { id: 'biblioteca', name: 'Biblioteca', lat: -2.1472852, lng: -79.9661399 },
+  { id: 'fcsh', name: 'FCSH', lat: -2.1477459, lng: -79.9687693 },
+  { id: 'fcnm', name: 'FCNM', lat: -2.1468714, lng: -79.9671363 },
+  { id: 'ubp', name: 'UBP', lat: -2.1429354, lng: -79.9671616 },
+  { id: 'fiec', name: 'FIEC', lat: -2.1446222, lng: -79.9676414 },
+  { id: 'fimcp', name: 'FIMCP', lat: -2.1444377, lng: -79.9659964 },
+  { id: 'fict', name: 'FICT', lat: -2.1455118, lng: -79.9653321 },
+  { id: 'fadcom', name: 'FADCOM', lat: -2.1440472, lng: -79.9624105 },
+];
+
+export const CAMPUS_CENTER = { lat: -2.1475, lng: -79.9625 };
+
+export function getDestination(id: string) {
+  return destinations.find((d) => d.id === id);
+}

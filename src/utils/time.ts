@@ -1,0 +1,50 @@
+/** Utilidades de calendario America/Guayaquil para rachas, misiones y ranking. */
+
+const TZ = 'America/Guayaquil';
+
+export function nowGuayaquil(): Date {
+  return new Date(
+    new Date().toLocaleString('en-US', { timeZone: TZ })
+  );
+}
+
+/** YYYY-MM-DD en Guayaquil */
+export function dateKeyGuayaquil(d = nowGuayaquil()): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+/**
+ * Clave de semana: inicia lunes 00:00 y cierra domingo 23:59 (Guayaquil).
+ * Formato: YYYY-Www (ISO-like with Monday start).
+ */
+export function weekKeyGuayaquil(d = nowGuayaquil()): string {
+  const day = d.getDay(); // 0 Sun .. 6 Sat
+  const mondayOffset = day === 0 ? -6 : 1 - day;
+  const monday = new Date(d);
+  monday.setDate(d.getDate() + mondayOffset);
+  monday.setHours(0, 0, 0, 0);
+  const y = monday.getFullYear();
+  const oneJan = new Date(y, 0, 1);
+  const week = Math.ceil(
+    ((monday.getTime() - oneJan.getTime()) / 86400000 + oneJan.getDay() + 1) / 7
+  );
+  return `${y}-W${String(week).padStart(2, '0')}`;
+}
+
+/** Próximo domingo 23:59:59 Guayaquil (fin de semana de ranking). */
+export function nextSundayResetLabel(d = nowGuayaquil()): string {
+  const day = d.getDay();
+  const add = day === 0 ? 0 : 7 - day;
+  const sunday = new Date(d);
+  sunday.setDate(d.getDate() + add);
+  const dd = String(sunday.getDate()).padStart(2, '0');
+  const mm = String(sunday.getMonth() + 1).padStart(2, '0');
+  return `${dd}/${mm} 23:59`;
+}
+
+export function isPastSundayReset(lastWeekKey: string, now = nowGuayaquil()): boolean {
+  return weekKeyGuayaquil(now) !== lastWeekKey;
+}

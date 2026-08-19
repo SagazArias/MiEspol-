@@ -1,0 +1,247 @@
+{
+  "destinations": [
+    {
+      "id": "cti",
+      "name": "CTI",
+      "lat": -2.1458446,
+      "lng": -79.9489238,
+      "sourceName": "1A - CTI",
+      "hits": [
+        "1A - CTI"
+      ]
+    },
+    {
+      "id": "admisiones",
+      "name": "Admisiones",
+      "lat": -2.1501606,
+      "lng": -79.9493357,
+      "sourceName": "2A - Admisiones",
+      "hits": [
+        "2A - Admisiones"
+      ]
+    },
+    {
+      "id": "fcv",
+      "name": "FCV",
+      "lat": -2.1518773,
+      "lng": -79.9567078,
+      "sourceName": "3A - FCV & CIDIS",
+      "hits": [
+        "3A - FCV & CIDIS"
+      ]
+    },
+    {
+      "id": "residencias",
+      "name": "Residencias",
+      "lat": -2.1536581,
+      "lng": -79.956962,
+      "sourceName": "4A - Residencia",
+      "hits": [
+        "4A - Residencia"
+      ]
+    },
+    {
+      "id": "fimcm",
+      "name": "FIMCM",
+      "lat": -2.1468841,
+      "lng": -79.9628524,
+      "sourceName": "5A - FIMCM",
+      "hits": [
+        "5A - FIMCM"
+      ]
+    },
+    {
+      "id": "rectorado",
+      "name": "Rectorado",
+      "lat": -2.1474978,
+      "lng": -79.9645096,
+      "sourceName": "6A - RECTORADO",
+      "hits": [
+        "6A - RECTORADO"
+      ]
+    },
+    {
+      "id": "biblioteca",
+      "name": "Biblioteca",
+      "lat": -2.1472852,
+      "lng": -79.9661399,
+      "sourceName": "7A - BIBLIOTECA",
+      "hits": [
+        "7A - BIBLIOTECA",
+        "12G"
+      ]
+    },
+    {
+      "id": "fcsh",
+      "name": "FCSH",
+      "lat": -2.1477459,
+      "lng": -79.9687693,
+      "sourceName": "8A - FCSH",
+      "hits": [
+        "8A - FCSH"
+      ]
+    },
+    {
+      "id": "fcnm",
+      "name": "FCNM",
+      "lat": -2.1468714,
+      "lng": -79.9671363,
+      "sourceName": "9A - FCNM",
+      "hits": [
+        "9A - FCNM"
+      ]
+    },
+    {
+      "id": "ubp",
+      "name": "UBP",
+      "lat": -2.1429354,
+      "lng": -79.9671616,
+      "sourceName": "10A - UBEP",
+      "hits": [
+        "10A - UBEP"
+      ]
+    },
+    {
+      "id": "fiec",
+      "name": "FIEC",
+      "lat": -2.1446222,
+      "lng": -79.9676414,
+      "sourceName": "11A - FIEC",
+      "hits": [
+        "11A - FIEC"
+      ]
+    },
+    {
+      "id": "fimcp",
+      "name": "FIMCP",
+      "lat": -2.1444377,
+      "lng": -79.9659964,
+      "sourceName": "12A - FIMCP",
+      "hits": [
+        "12A - FIMCP"
+      ]
+    },
+    {
+      "id": "fict",
+      "name": "FICT",
+      "lat": -2.1455118,
+      "lng": -79.9653321,
+      "sourceName": "13A - FICT",
+      "hits": [
+        "13A - FICT"
+      ]
+    },
+    {
+      "id": "fadcom",
+      "name": "FADCOM",
+      "lat": -2.1440472,
+      "lng": -79.9624105,
+      "sourceName": "14A - FADCOM",
+      "hits": [
+        "14A - FADCOM"
+      ]
+    }
+  ],
+  "folders": [
+    "ZONA 1 - CTI; ZONA 2 - Admisiones - Educación Continua",
+    "ZONA 3 - FCV",
+    "ZONA 4 - TECNOLOGÍAS; ZONA 5 - FIMCM",
+    "ZONA 6 - RECTORADO; ZONA 7 - BIBLIOTECA",
+    "ZONA 8 - FCSH",
+    "ZONA 9 - FCNM",
+    "ZONA10 - UBEP; ZONA 11 - FIEC",
+    "ZONA 12 - FIMCP",
+    "ZONA 13 - FICT; ZONA 14 - FADCOM",
+    "Rutas y Senderos"
+  ],
+  "interesting": [
+    {
+      "name": "1A - CTI",
+      "desc": "Edificio del Centro de Tecnologías de Información (CTI)",
+      "poly": true,
+      "point": false,
+      "n": 37,
+      "c": {
+        "lng": -79.94892381351352,
+        "lat": -2.1458445918918914
+      }
+    },
+    {
+      "name": "3U",
+      "desc": "Asociación de Tecnología & Bodega",
+      "poly": true,
+      "point": false,
+      "n": 6,
+      "c": {
+        "lng": -79.95683020000001,
+        "lat": -2.151490933333333
+      }
+    },
+    {
+      "name": "4A - Residencia",
+      "desc": "Residencia Universitaria",
+      "poly": true,
+      "point": false,
+      "n": 13,
+      "c": {
+        "lng": -79.9569619923077,
+        "lat": -2.153658123076923
+      }
+    },
+    {
+      "name": "6A - RECTORADO",
+      "desc": "",
+      "poly": true,
+      "point": false,
+      "n": 29,
+      "c": {
+        "lng": -79.96450958275862,
+        "lat": -2.147497786206897
+      }
+    },
+    {
+      "name": "7A - BIBLIOTECA",
+      "desc": "Laboratorios Orión, centauro, omega",
+      "poly": true,
+      "point": false,
+      "n": 24,
+      "c": {
+        "lng": -79.966139875,
+        "lat": -2.147285208333334
+      }
+    },
+    {
+      "name": "10A - UBEP",
+      "desc": "Bienestar Estudiantil",
+      "poly": true,
+      "point": false,
+      "n": 7,
+      "c": {
+        "lng": -79.96716157142858,
+        "lat": -2.1429354000000003
+      }
+    },
+    {
+      "name": "12G",
+      "desc": "Laboratorio y Biblioteca",
+      "poly": true,
+      "point": false,
+      "n": 13,
+      "c": {
+        "lng": -79.96647256923076,
+        "lat": -2.144421284615385
+      }
+    },
+    {
+      "name": "13K - GTSI",
+      "desc": "Gerencia de Tecnología y Sistemas de Información",
+      "poly": true,
+      "point": false,
+      "n": 9,
+      "c": {
+        "lng": -79.96521552222224,
+        "lat": -2.1465490333333332
+      }
+    }
+  ]
+}
